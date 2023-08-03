@@ -1,4 +1,6 @@
 --- 
+import "./Layout.css"
+
 interface Props {
 	title: string;
 }
@@ -16,8 +18,24 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body style="background-size: 100% 100%;" class="bg-[url('/assets/img/logo-intrepida.jpg')] bg-no-repeat bg-fixed h-screen">
+		<nav>
+			<div class="navbar bg-yellow">
+				<a 
+					class="btn btn-ghost normal-case text-xl text-black"
+					href="/">
+						Intrépida Marketing
+				</a>
+			</div>
+		</nav>
+
 		<slot />
+
+		<footer>
+			<p>
+				Página web diseñada y desarrollada por Manuel De León
+			</p>
+		</footer>
 	</body>
 </html>
 <style is:global>
