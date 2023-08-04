@@ -1,8 +1,9 @@
---- 
-import "./Layout.css"
+---
+import "./Layout.css";
+import NavLinks from "../data/NavLinks";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -10,51 +11,97 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100;1,300;1,400&family=Open+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
-		<title>{title}</title>
-	</head>
-	<body style="background-size: 100% 100%;" class="bg-[url('/assets/img/logo-intrepida.jpg')] bg-no-repeat bg-fixed h-screen">
-		<nav>
-			<div class="navbar bg-yellow">
-				<a 
-					class="btn btn-ghost normal-case text-xl text-black"
-					href="/">
-						Intrépida Marketing
-				</a>
-			</div>
-		</nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100;1,300;1,400&family=Open+Sans:wght@300;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body
+    style="background-size: 100% 100%; font-family: Lato;"
+    class="bg-[url('/assets/img/logo-intrepida.jpg')] bg-no-repeat bg-fixed h-screen"
+  >
+    <nav class="sticky top-2 shadow bg-white mx-10 rounded-xl">
+      <div class="navbar flex justify-between px-10">
+        <div>
+          <a style="font-style: italic;" class="text-black text-2xl" href="/">
+            Intrépida Marketing
+          </a>
+        </div>
+        <div>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"></path>
+            </svg>
+          </button>
+          {
+            NavLinks.map((link) => (
+              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <a class={link.style} href={link.url}>
+                  {link.text}
+                </a>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </nav>
 
-		<slot />
+    <slot />
 
-		<footer>
-			<p>
-				Página web diseñada y desarrollada por Manuel De León
-			</p>
-		</footer>
-	</body>
+    <footer class="bg-white py-5">
+      <p class="text-center text-black text-lg font-extrabold">
+        Web diseñada y desarrollada por <a class="text-blue" href="https://www.deleonnet.com">Manuel De León</a>
+      </p>
+    </footer>
+  </body>
 </html>
+
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151A;
-		background-size: 224px;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
+    background-size: 224px;
+  }
+  code {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  }
 </style>
