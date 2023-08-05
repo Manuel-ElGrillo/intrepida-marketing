@@ -1,0 +1,17 @@
+---
+import services from '../../data/Services'
+---
+
+<div id="servicios">
+    <h5 class="text-black text-xl font-semibold">Servicios & Soluciones</h5>
+    {
+        services.map( service => (
+            <div class="card w-96 bg-white my-5 shadow-xl">
+                <div class="card-body">
+                    <h6 class="card-title text-black">{service.title}</h6>
+                    <p class="text-black">{service.description}</p>
+                </div>
+            </div>
+        ))
+    }
+</div>
