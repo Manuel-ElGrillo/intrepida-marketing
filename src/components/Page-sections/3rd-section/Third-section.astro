@@ -1,0 +1,44 @@
+---
+import CTA from "../../CTA/CTA.astro";
+import Prices from "../../Prices/Prices.astro";
+import IntrepidText from "../../IntrepidText/IntrepidText.astro";
+---
+
+<section class="mx-20 my-10 relative">
+
+    <h4 
+        class="text-black font-extrabold text-4xl mx-auto py-5 px-5 mt-2 mb-5 w-fit"
+        style={{
+            background: 'rgba(38, 121, 142, 0.35)',
+            borderRadius: '16px',
+            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+            backdropFilter: 'blur(14px)',
+            WebkitBackdropFilter: 'blur(14px)',
+            border: '1px solid rgba(212, 97, 112, 0.08)',
+        }}>
+            Elije el mejor plan que se adapte a tus necesidades
+    </h4>
+
+    <div 
+        class="p-5 rounded-lg"
+        style={{
+            background: 'rgba(255, 255, 255, 0.45)',
+            borderRadius: '16px',
+            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+            backdropFilter: 'blur(8.2px)',
+            WebkitBackdropFilter: 'blur(8.2px)',
+            border: '1px solid rgba(255, 255, 255, 0.08)'
+          }}
+    >
+
+        <Prices />
+
+        <div class="flex justify-center">
+            <CTA CTAtext="Call To Action"/>
+        </div>
+
+        <IntrepidText intrepidText="El mejor trato de tu vida che 😁" intrepidStyles="chat chat-start absolute bottom-[40px] left-[950px]"/>
+
+    </div>
+
+</section>

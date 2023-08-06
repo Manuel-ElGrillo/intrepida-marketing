@@ -10,6 +10,7 @@ module.exports = {
 				beige: '#FFE3B3',
 				black: '#1D232A',
 				white: '#FFFFFF',
+				pink: "#D46170",
 			}
 		},
 		

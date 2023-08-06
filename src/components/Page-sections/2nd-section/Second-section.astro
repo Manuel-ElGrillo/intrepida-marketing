@@ -1,0 +1,37 @@
+---
+import Advisory from "../../Advisory/Advisory.astro";
+import History from "../../History/History.astro";
+import Resources from "../../Resources/Resources.astro";
+import RRSS from "../../RRSS/RRSS.astro";
+import CTA from "../../CTA/CTA.astro";
+import IntrepidText from "../../IntrepidText/IntrepidText.astro";
+---
+
+<section class="flex justify-between mx-20 my-10 rounded-xl bg-yellow shadow-xl relative">
+
+    <div class="p-5">
+
+        <Advisory />
+
+        <CTA CTAtext="Call To Action" />
+
+        
+    </div>
+
+    <IntrepidText intrepidText="No seas tímido y dame click 🙋🏻‍♀️" intrepidStyles="chat chat-start absolute bottom-[40px] left-[270px]"/>
+    
+    <div class="p-5">
+        
+        <History />
+        
+    </div>
+    
+    <div class="p-5">
+        
+        <Resources />
+
+        <RRSS />
+
+    </div>
+
+</section>

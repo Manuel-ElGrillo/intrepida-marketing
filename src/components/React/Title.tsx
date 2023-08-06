@@ -14,7 +14,7 @@ const Title = () => {
 
   return (
     <div>
-      <h1 className='text-black text-2xl flex flex-col justify-center h-full'>{Titles[getRandomIndex()]}</h1>
+      <h1 className='text-black text-4xl font-extrabold mt-40 p-5 rounded-xl bg-beige shadow-xl'>{Titles[getRandomIndex()]}</h1>
     </div>
   )
 }

@@ -5,17 +5,37 @@ const Header = () => {
   const randomIndex = Math.floor( Math.random() * quotes.length);
 
   return (
-    <header className='mt-10 h-screen flex flex-col text-center justify-center'>
-      <p className="text-black text-3xl italic">
-        {
-          quotes[randomIndex].text
-        }
-      </p>
-      <span className="text-black text-xl italic">
-        {
-          quotes[randomIndex].author
-        }
-      </span>
+    <header 
+      className='mt-10 h-screen flex flex-col text-center justify-center'>
+
+      <figure 
+        className="max-w-screen-md p-20 mx-auto text-center"
+        style={{
+          background: 'rgba(255, 255, 255, 0.5)',
+          borderRadius: '16px',
+          boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+          backdropFilter: 'blur(8.2px)',
+          WebkitBackdropFilter: 'blur(8.2px)',
+          border: '1px solid rgba(255, 255, 255, 0.08)'
+        }}>
+        <svg className="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 18 14">
+          <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+        </svg>
+        <blockquote>
+          <p className="text-2xl italic font-medium text-black">
+            {
+              quotes[randomIndex].text
+            }
+          </p>
+        </blockquote>
+        <figcaption className="flex items-center justify-center mt-6 space-x-3">
+          {/* <img className="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture" /> */}
+          <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+            <cite className="pr-3 font-medium text-black">{quotes[randomIndex].author}</cite>
+          </div>
+        </figcaption>
+      </figure>
+
     </header>
   )
 }
