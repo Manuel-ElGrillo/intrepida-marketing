@@ -7,9 +7,18 @@ import CTA from "../../CTA/CTA.astro";
 import IntrepidText from "../../IntrepidText/IntrepidText.astro";
 ---
 
-<section class="flex justify-between mx-20 my-10 rounded-xl bg-yellow shadow-xl relative">
+<section 
+    class="flex justify-between mx-20 my-10 relative"
+    style={{
+        background: 'rgba(255, 193, 114, 0.7)',
+        borderRadius: '16px',
+        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+        backdropFilter: 'blur(11.5px)',
+        WebkitBackdropFilter: 'blur(11.5px)',
+        border: '1px solid rgba(255, 193, 114, 0.08)'
+      }}>
 
-    <div class="p-5">
+    <div class="p-5 w-[30%]">
 
         <Advisory />
 
@@ -18,15 +27,15 @@ import IntrepidText from "../../IntrepidText/IntrepidText.astro";
         
     </div>
 
-    <IntrepidText intrepidText="No seas tímido y dame click 🙋🏻‍♀️" intrepidStyles="chat chat-start absolute bottom-[40px] left-[270px]"/>
+    <IntrepidText intrepidText="No seas tímido y dame click 🙋🏻‍♀️" intrepidStyles="chat chat-end absolute top-[230px] left-[-95px]"/>
     
-    <div class="p-5">
+    <div class="p-5 w-[50%]">
         
         <History />
         
     </div>
     
-    <div class="p-5">
+    <div class="p-5 w-[20%]">
         
         <Resources />
 

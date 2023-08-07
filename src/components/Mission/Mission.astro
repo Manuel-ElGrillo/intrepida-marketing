@@ -1,10 +1,40 @@
 ---
+interface MissionList {
+  mission: string;
+}
 
+const missionList: MissionList[] = [
+  {
+    mission: "Aumentar tus ingresos anuales al conectarte con el cliente que busca tus servicios."
+  },
+  {
+    mission: "Optimizar tu presencia online para que logres cerrar más ventas mensuales."
+  },
+  {
+    mission: "Hacerte un referente para que acudan a ti cuando busquen lo que ofreces."
+  },
+  {
+    mission: "Atraer y deleitar a tus clientes en todo su recorrido de compra."
+  },
+];
 ---
 
-<div class="card w-96 bg-white shadow-xl h-fit">
+<div class="card w-96 bg-white shadow-xl h-fit rotate-[-1deg]">
     <div class="card-body">
-      <h5 class="card-title text-black">Misión</h5>
-      <p class="text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim non exercitationem eum sit ea qui minima necessitatibus consequuntur nulla tempore natus autem aliquid fugiat debitis quo sapiente a, magni accusamus iure quos eos iusto maxime fugit! Nesciunt cum reiciendis eveniet, eos corporis iste! Explicabo facere quis sapiente ad? Facere ratione obcaecati iste veniam quam saepe, excepturi rerum similique libero earum!</p>
+      <h5 class="card-title text-black">Misión Intrépida</h5>
+      <ul>
+        {
+          missionList.map( item => (
+            <li class="flex align-baseline">
+              <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400 mt-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="green" viewBox="0 0 16 12">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+              </svg>
+              <span class="text-black px-2">
+                {item.mission}
+              </span>
+            </li>
+          ) )
+        }
+      </ul>
     </div>
   </div>
