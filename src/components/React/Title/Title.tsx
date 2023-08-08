@@ -1,4 +1,4 @@
-import Titles from '../../data/Titles';
+import Titles from '../../../data/Titles';
 
 const Title = () => {
 
@@ -13,10 +13,14 @@ const Title = () => {
   // }, 7000);
 
   return (
-    <div className='mx-5'>
+    <div className='mx-5 chat chat-end'>
       {
         Titles.map( title => (
-          <h2 className={title.css}>{title.title}</h2>
+          <h2 
+            key={title.title} 
+            className={title.css}>
+              {title.title}
+          </h2>
         ))
       }
     </div>

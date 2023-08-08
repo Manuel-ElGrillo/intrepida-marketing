@@ -1,95 +1,95 @@
 const mainTitles = [
     {
         title: "Cómo manejar las redes de una tienda",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-beige shadow-xl rotate-[3deg]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute top-0 left-[500px] opacity-0 animate-titleOne",
     },
     {
         title: "Cómo manejar redes sociales",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-yellow shadow-xl rotate-[-3deg] absolute left-[600px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-green shadow-xl chat-bubble absolute top-[90px] left-[400px] opacity-0 animate-titleTwo"
     },
     {
         title: "Comentarios negativos en redes sociales",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-beige shadow-xl rotate-[9deg] absolute left-[350px] top-[250px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute left-[500px] top-[180px] opacity-0 animate-titleThree"
     },
     {
         title: "Cómo hacer publicidad en redes sociales",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-green shadow-xl rotate-[87deg] absolute left-[870px] top-[400px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-green shadow-xl chat-bubble absolute left-[400px] top-[270px] opacity-0 animate-titleFour"
     },
     {
         title: "Cómo vender por internet",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-green shadow-xl rotate-[-4deg] absolute left-[-30px] top-[300px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-green shadow-xl chat-bubble absolute left-[-10px] top-[450px] opacity-0 animate-titleFive"
     },
     {
         title: "Cuáles redes sociales existen",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-pink shadow-xl rotate-[4deg] absolute left-[-26px] top-[430px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute left-[-30px] top-[360px] opacity-0 animate-titleSix"
     },
     {
         title: "Logos para redes sociales",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-white shadow-xl rotate-[1deg] absolute left-[286px] top-[370px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute left-[600px] top-[360px] opacity-0 animate-titleSeven"
     },
     {
         title: "Publicidad para redes sociales",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-yellow shadow-xl rotate-[-3deg] absolute left-[650px] top-[430px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-green shadow-xl chat-bubble absolute left-[550px] top-[450px] opacity-0 animate-titleEight"
     },
     {
         title: "Estadísticas en redes sociales",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-white shadow-xl rotate-[5deg] absolute left-[650px] top-[550px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute left-[-30px] top-[540px] opacity-0 animate-titleNine"
     },
     {
         title: "Community manager para empresas",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-white shadow-xl rotate-[3deg] absolute left-[50px] bottom-[70px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute left-[600px] top-[540px] opacity-0 animate-titleTen"
     },
     {
         title: "Community manager para emprendimientos",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-beige shadow-xl rotate-[-4deg] absolute right-[420px] bottom-[5px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-green shadow-xl chat-bubble absolute left-[-10px] top-[630px] opacity-0 animate-titleEleven"
     },
     {
         title: "Vender por redes sociales",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-pink shadow-xl rotate-[26deg] absolute right-[420px] bottom-[250px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute left-[680px] top-[720px] opacity-0 animate-titleTwelve"
     },
     {
         title: "Quién maneja redes sociales",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-blue shadow-xl rotate-[-87deg] absolute left-[-250px] bottom-[275px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute left-[-10px] top-[1080px] opacity-0 animate-titleThirteen"
     },
     {
         title: "Community manager en Buenos Aires",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-green shadow-xl absolute right-[-30px] bottom-[-60px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-green shadow-xl chat-bubble absolute left-[-30px] top-[990px] opacity-0 animate-titleFourteen"
     },
     {
         title: "Analista de marketing",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-yellow shadow-xl rotate-[-83deg] absolute left-[-98px] bottom-[335px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-green shadow-xl chat-bubble absolute left-[800px] top-[810px] opacity-0 animate-titleFiveteen"
     },
     {
         title: "SEO analist",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-blue shadow-xl rotate-[1deg] absolute top-[180px] left-[820px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-green shadow-xl chat-bubble absolute top-[630px] left-[850px] opacity-0 animate-titleSixteen"
     },
     {
         title: "Creador de contenido",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-green shadow-xl rotate-[-4deg] absolute right-[701px] bottom-[181px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute left-[550px] top-[1080px] opacity-0 animate-titleSeventeen"
     },
     {
         title: "Contenido SEO",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-yellow shadow-xl rotate-[-7deg] absolute right-[539px] bottom-[117px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute left-[1000px] top-[1080px] opacity-0 animate-titleEightteen"
     },
     {
         title: "Branding para negocios",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-blue shadow-xl rotate-[-4deg] absolute left-[135px] bottom-[190px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute left-[680px] top-[900px] opacity-0 animate-titleNineteen"
     },
     {
         title: "Cómo poner mi negocio en google maps",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-beige shadow-xl rotate-[3deg] absolute left-[135px] bottom-[270px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-green shadow-xl chat-bubble absolute left-[-10px] top-[810px] opacity-0 animate-titleTwenty"
     },
     {
         title: "Marketing digital en Buenos Aires",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-green shadow-xl rotate-[5deg] absolute left-[155px] bottom-[350px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute left-[-30px] top-[720px] opacity-0 animate-titleTwentyOne"
     },
     {
         title: "Agencia de marketing digital",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-beige shadow-xl rotate-[10deg] absolute left-[175px] bottom-[450px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-white shadow-xl chat-bubble absolute left-[-30px] top-[900px] opacity-0 animate-titleTwentyTwo"
     },
     {
         title: "Creativo redes sociales",
-        css: "text-black text-4xl text-center font-extrabold mt-5 p-5 rounded-xl bg-pink shadow-xl rotate-[-5deg] absolute left-[15px] bottom-[-20px]"
+        css: "text-black text-4xl text-center font-bold mt-5 p-5 rounded-xl bg-green shadow-xl chat-bubble absolute left-[710px] top-[990px] opacity-0 animate-titleTwentyThree"
     },
 ]
 

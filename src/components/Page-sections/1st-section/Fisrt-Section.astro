@@ -1,6 +1,6 @@
 ---
 import Mission from "../../Mission/Mission.astro";
-import Title from "../../React/Title";
+import Title from "../../React/Title/Title";
 import Services from "../../Services/Services.astro";
 ---
 
@@ -9,7 +9,7 @@ import Services from "../../Services/Services.astro";
     <strong class="text-black bg-white rounded-xl text-xl italic p-5 mb-5 block mx-auto w-fit">Si quieres llevar tu negocio al lugar donde imaginaste que estarías hoy, estás en el lugar correcto.</strong>
 
     <h1 
-        class="text-center text-4xl  md:text-5xl lg:text-6xl text-black font-extrabold leading-none tracking-tight w-fit mx-auto p-5 rotate-[-2deg]"
+        class="text-center text-4xl  md:text-5xl lg:text-6xl text-black font-extrabold leading-none tracking-tight w-fit mx-auto p-5"
         style={{
             background: 'rgba(255, 193, 114, 0.6)',
             borderRadius: '16px',
@@ -18,10 +18,15 @@ import Services from "../../Services/Services.astro";
             WebkitBackdropFilter: 'blur(11.5px)',
             border: '1px solid rgba(255, 193, 114, 0.08)'
           }}>
-            Intrépida Marketing Solutions
+          <span class="underline underline-offset-3 decoration-8 decoration-blue">
+            Intrépida
+          </span>
+             Marketing <br> Soluciones para tu negocio online
     </h1>
 
-    <div class="flex mx-20 my-10 justify-between relative">
+    <span class='text-center text-3xl text-black block mx-auto mt-5 p-5 bg-yellow w-fit rounded-lg'>Te ayudo a despejar todas estas dudas:</span>
+
+    <div class="flex mx-20 mt-10 mb-36 justify-between relative">
 
         <Mission />
 
