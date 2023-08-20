@@ -9,7 +9,7 @@ const Header = () => {
       className='mt-10 h-screen flex flex-col text-center justify-center'>
 
       <figure 
-        className="max-w-screen-md p-20 mx-auto text-center"
+        className="w-[90%] lg:max-w-screen-md p-20 mx-auto text-center"
         style={{
           background: 'rgba(255, 255, 255, 0.5)',
           borderRadius: '16px',

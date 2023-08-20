@@ -4,16 +4,18 @@ import services from '../../data/Services'
 
 <div 
     id="servicios"
-    class="bg-blue p-5 rounded-xl shadow-xl">
-    <h5 class="text-white text-xl font-semibold">Servicios & Soluciones</h5>
-    {
-        services.map( service => (
-            <div class={service.css}>
-                <div class="card-body">
-                    <h6 class="card-title text-black">{service.title}</h6>
-                    <p class="text-black">{service.description}</p>
+    class="bg-blue p-5 rounded-xl shadow-xl w-fit lg:w-[90%] mx-10 lg:mx-auto">
+    <h5 class="text-white text-2xl font-semibold xl:text-center">Servicios & Soluciones</h5>
+    <div class="flex flex-col lg:flex-row">
+        {
+            services.map( service => (
+                <div class={service.css}>
+                    <div class="card-body">
+                        <h6 class="card-title text-black">{service.title}</h6>
+                        <p class="text-black">{service.description}</p>
+                    </div>
                 </div>
-            </div>
-        ))
-    }
+            ))
+        }
+    </div>
 </div>

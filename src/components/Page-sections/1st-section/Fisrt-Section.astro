@@ -6,10 +6,10 @@ import Services from "../../Services/Services.astro";
 
 <section>
 
-    <strong class="text-black bg-white rounded-xl text-xl italic p-5 mb-5 block mx-auto w-fit">Si quieres llevar tu negocio al lugar donde imaginaste que estarías hoy, estás en el lugar correcto.</strong>
+    <strong class="text-black bg-white rounded-xl text-xl italic p-5 mb-5 block mx-auto w-[90%] lg:w-fit">Si quieres llevar tu negocio al lugar donde imaginaste que estarías hoy, estás en el lugar correcto.</strong>
 
     <h1 
-        class="text-center text-4xl  md:text-5xl lg:text-6xl text-black font-extrabold leading-none tracking-tight w-fit mx-auto p-5"
+        class="text-center text-4xl md:text-5xl lg:text-6xl text-black font-extrabold leading-none tracking-tight w-[90%] lg:w-fit mx-auto p-5"
         style={{
             background: 'rgba(255, 193, 114, 0.6)',
             borderRadius: '16px',
@@ -24,13 +24,20 @@ import Services from "../../Services/Services.astro";
              Marketing <br> Soluciones para tu negocio online
     </h1>
 
-    <span class='text-center text-3xl text-black block mx-auto mt-5 p-5 bg-yellow w-fit rounded-lg'>Te ayudo a despejar todas estas dudas:</span>
+    
+    <div>
 
-    <div class="flex mx-20 mt-10 mb-36 justify-between relative">
+      <div class="flex justify-center">
+        <span class='text-center text-3xl text-black mx-auto mt-5 p-5 bg-yellow w-fit rounded-lg'>Te ayudo a despejar todas estas dudas:</span>
+      </div>
+
+      <Title />
+
+    </div>
+
+    <div class="my-10">
 
         <Mission />
-
-        <Title />
 
         <Services />
 
