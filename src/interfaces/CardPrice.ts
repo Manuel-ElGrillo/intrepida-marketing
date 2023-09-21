@@ -3,4 +3,5 @@ export interface CardPrices {
     price: number;
     budget?: string;
     features: string[];
+    plan: string;
 }

@@ -1,11 +1,13 @@
 ---
 
-const { CTAtext, CTAhref } = Astro.props;
+const { CTAtext, CTAhref, CTAtarget, CTAdownload } = Astro.props;
 ---
 
 <div class="my-5 relative w-full flex justify-center">
     <a  href={CTAhref}
-        class="text-white text-xl bg-blue focus:ring-4 focus:outline-none focus:ring-blue font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2">
+        target={CTAtarget}
+        download={CTAdownload}
+        class="text-white text-xl bg-blue focus:ring-4 focus:outline-none focus:ring-blue font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 transition hover:cursor-pointer hover:text-green">
         {CTAtext}
     </a>
 

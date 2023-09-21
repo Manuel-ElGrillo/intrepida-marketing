@@ -11,6 +11,7 @@ const prices: CardPrices[] = [
             "Calendario de contenidos",
             "Y +"
         ],
+        plan: "Hola Mariangeli. Quiero que deleites a mis clientes para incrementar mis ventas. 📈",
     },
     {
         title: "Enchular mi presencia digital",
@@ -26,20 +27,22 @@ const prices: CardPrices[] = [
             "Google My business",
             "Perfiles de redes sociales",                 
         ],
+        plan: "Hola Mariangeli. Quiero enchular mi presencia digital. 🛠",
     },
-    {
-        title: "Posiciona tu negocio online en Google y complace a tus clientes",
-        price: 1600,
-        budget: "Precio base",
-        features: [
-            "Auditoría web SEO",
-            "Link building",
-            "Redacción de blogs para el recorrido del comprador",
-            "Creación de imagen de marca",
-            "Construcción de sitio web",
-            "Calendario y estrategia de contenidos",
-        ],
-    },
+    // {
+    //     title: "Posiciona tu negocio online en Google y complace a tus clientes",
+    //     price: 1600,
+    //     budget: "Precio base",
+    //     features: [
+    //         "Auditoría web SEO",
+    //         "Link building",
+    //         "Redacción de blogs para el recorrido del comprador",
+    //         "Creación de imagen de marca",
+    //         "Construcción de sitio web",
+    //         "Calendario y estrategia de contenidos",
+    //     ],
+    //     plan: "Hola Mariangeli. Quiero posicionar mi negocio en Google. 🌐🔍",
+    // },
     {
         title: "Growth hacking para los que no tienen miedo",
         price: 3000,
@@ -55,6 +58,7 @@ const prices: CardPrices[] = [
             "Reestructuración de plataformas para posicionar sobre la competencia",
             "Blogs para el recorrido del comprador",
         ],
+        plan: "Hola Mariangeli. 🔥 Venga el Growthhacking!! 🔥",
     },
 ]
 
